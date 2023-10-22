@@ -1,10 +1,43 @@
 /* Line 1 */
+.main-container{
+  margin: 0px 190px;
+}
 
+p{
+  font-size: 28px;
+}
+.text-main{
+  width: 300px;
+}
+.text-main>p {
+  /* border: 2px solid; */
+  width: 426px;
+  
+  text-align: justify;
+}
+.hero-btn{
+  color: #0e71a8;
+  border: 5px solid;
+  height: 60px;
+  width: 200px;
+}
+.hero-btn:hover{
+  background-color: #0e71a8;
+  border:5px solid #0e71a8;
+  color: white;
+  /* border: 5px solid; */
+}
+.hero-btn:active{
+  background-color: #0e71a8 !important;
+  border:5px solid #0e71a8 !important;
+  color: white;
+
+}
 h1{
   /* Unlock the World of Open Source: Your Journey Begins Here, Where Learning Meets Possibility. */
 
 
-width: 917px;
+width: 38rem;
 /* height: 170px; */
 left: 80px;
 top: 124px;
@@ -12,21 +45,112 @@ top: 124px;
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 700;
-font-size: 50px;
+font-size: 40px;
 line-height: 61px;
 
 color: #0E71A8;
 
 
 }
-
-.line{
-  position: absolute;
-  width: 40rem;
+.section-roadmap{
+ 
+}
+.section-roadmap>h1{
+  text-align:center;
+  width: 100%;
+}
+.left-side{
+  width: 50%;
+  /* border: 2px solid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 13rem;
+}
+.left-side>div{
+  margin:2px
+}
+.left-side::after{
+  content: "";
+  position: relative;
+  width: 50rem;
   height: 0px;
-  top: 41rem;
+  bottom: 51rem;
   border: 6px solid #0E71A8;
-  transform: rotate(90deg);
-  right: 44rem;
+  transform: scaley(1.6) rotate(90deg);
+  display: block;
+  left: 10rem;
+}
+.left-side h1::after{
+  content: "";
+    width: 30px;
+    height: 28px;
+    display: block;
+    border: 6px solid #0E71A8;
+    border-radius: 31px;
+    position: relative;
+    left: 34rem;
+    bottom: 43px;
+    background: #0E71A8;
+}
+.right-side h1::after{
+  content: "";
+    width: 30px;
+    height: 28px;
+    display: block;
+    border: 6px solid #0E71A8;
+    border-radius: 31px;
+    position: relative;
+    right: 6rem;
+    bottom: 43px;
+    background: #0E71A8;
+}
+.roadmap-div{
+  /* border: 2px solid red; */
+  /* display: flex; */
+  width: 100%;
+  /* flex-direction: column; */
+}
+.link{
+  display: flex;
+  /* border: 2px solid pink; */
+  height: 40px;
+  width: 70%;
+  margin:  3px;
+  justify-content: space-between;
+}
+.link>button{
+  width: 127px;
+  height: 35px;
+  background-color: #EEf4c9;
+  color: #0E71A8;
+  border: none;
+  border-radius: 29px;
+}
+.right-side{
+  display: flex;
+    margin: 268px 0px;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 10rem;
+}
+.about>h1{
+  text-align: center;
+  width: 100%;
 }
 
+.about>p{
+  text-align: justify;
+}
+.team{
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer{
+  margin-top: 30px;
+  background-color: #0E71A8;
+  color: white !important;
+}
